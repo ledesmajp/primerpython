@@ -2,12 +2,9 @@ import random
 import os
 os.system('cls')
 
-
-
 cpu = random.randint(1, 3)
-number = 1
 
-while number:
+while True:
     print("====================")
     print("Rock Paper Scissors")
     print("====================")
@@ -15,7 +12,7 @@ while number:
     number = int(input("Pick a numer: "))
     while number == cpu:
         print(cpu)
-        number = int(input("Empate, ingresa un nuevo numero: "))
+        number = int(input("you tied, try again: "))
         cpu = random.randint(1, 3)      
         break
     print(cpu)
@@ -31,5 +28,3 @@ while number:
         if cpu == 2: print("You chose: ✌️\nCPU chose: 🖐️\nThe player won!")
         else: print("You chose: ✌️\nCPUchose: ✊\nThe player won!")
 
-# cambios en el codigo para probar git
-# nuevo cambio para probar git hub
